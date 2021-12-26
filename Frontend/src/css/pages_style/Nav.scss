@@ -1,0 +1,41 @@
+@import '../abstract';
+@import '../layout';
+
+.left_side {
+  background-color: $primary-black;
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  grid-template-rows: 100px 1fr;
+}
+
+.pro_id {
+  width: 100%;
+  display: grid;
+  align-self: center;
+  justify-content: start;
+
+  & > h1 {
+    color: $primary-blue;
+  }
+
+  & > h2 {
+    color: $primary-gray;
+    font-weight: 300;
+    font-size: 14px;
+    align-self: start;
+    justify-content: start;
+  }
+}
+
+
+
+.menu {
+  &__list {
+    &__item {
+      list-style: none;
+    }
+  }
+
+}

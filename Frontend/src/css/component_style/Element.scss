@@ -1,0 +1,58 @@
+@import "../abstract";
+// Element
+.element {
+  background: #FFFFFF;
+  box-shadow: 3px 4px 6px 2px rgba(0, 0, 0, 0.05);
+  height: max-content;
+  color: $primary-gray;
+  padding: 15px;
+
+  transition: all .5s;
+
+  &__header {
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 60% 200px 30px;
+    justify-content: start;
+    align-items: center;
+
+    &__title {
+      justify-self: start;
+      font-size: $font-xxx;
+    }
+
+    &__date {
+      justify-self: start;
+    }
+  }
+
+  &__body {
+    padding: 0 10px;
+    line-height: 18px;
+  }
+
+
+  &:hover {
+    background: #ccc;
+
+    &__header {
+
+      &__title {
+        justify-self: start;
+        font-size: $font-xxx;
+      }
+
+      &__date {
+        justify-self: start;
+      }
+    }
+
+    &__body {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+
+  }
+
+}

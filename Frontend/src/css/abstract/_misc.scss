@@ -1,0 +1,46 @@
+// Hold general tags declarations
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: $font-family;
+  font-size: $font-x;
+}
+
+#root {
+  height: 100vh;
+}
+
+h1 {
+  color: $primary-gray;
+  font-weight: 800;
+  text-align: center;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.legend {
+  display: grid;
+  font-size: $font-xx;
+  justify-content: center;
+  align-items: center;
+
+  & a {
+    color: $primary-gray;
+
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+  }
+}

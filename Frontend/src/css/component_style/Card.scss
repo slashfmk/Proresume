@@ -1,0 +1,27 @@
+.card {
+    background-color: rgba(14, 13, 13, 0.979);
+    width: 18rem;
+    grid-row: 2 / -3;
+    grid-column: 2 / -3;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+
+.card h1 {
+    font-size: xx-large;
+    font-weight: 600;
+    font-style:normal;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.card h2 {
+    font-size: medium;
+    font-weight: 300;
+    font-style:normal;
+    color: rgb(202, 199, 199);
+    margin-bottom: 0.7rem;
+    text-align: right;
+}

@@ -1,0 +1,16 @@
+
+.form_container {
+    background-color: #fff;
+    width: 35rem;
+    grid-row: 2 / -3;
+    grid-column: 2 / -3;
+    padding: 2rem;
+    border-radius: .6rem;
+    justify-self: center;
+}
+
+.form_container h2 {
+    font-weight: 300;
+    margin-bottom: .4rem;
+    text-align: center;
+}

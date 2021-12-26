@@ -1,0 +1,33 @@
+@import "../abstract/";
+
+input, .input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 1.1rem 1rem;
+    display: block;
+    margin: .5rem 0;
+    border-radius: .4rem;
+    text-align: center;
+   // font-size: 14px;
+    font-family: $font-family;
+
+    &:focus {
+        border: 1px solid $primary-color;
+        background-color: rgb(226, 222, 222);
+    }
+
+    &::placeholder {
+        text-align: center;
+    }
+
+    &:error {
+        border: 1px solid $primary-red;
+    }
+}
+
+.error_field {
+    font-size: .72rem;
+    color: $primary-red;
+    text-align: center;
+    margin-bottom: 1px;
+}

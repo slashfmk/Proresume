@@ -1,0 +1,63 @@
+@import "../abstract";
+
+.card_overview {
+  width: 331px;
+  min-height: 170px;
+
+  display: grid;
+  grid-template-rows: 1fr 20px;
+
+  background-color: $primary-black;
+  color: white;
+  border-radius: 10px;
+  padding: 22px;
+
+
+  align-self: center;
+
+  transition: all .5s;
+
+  & h4 {
+    color: #ccc;
+    cursor: pointer;
+    &:hover {
+      color: $primary-blue;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: justify;
+    align-self: center;
+  }
+
+  &__date {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 22px;
+    justify-self: right;
+    color: $primary-gray;
+  }
+
+  &__icons {
+    font-size: 26px;
+    //position: relative;
+    //top: -10px;
+    //left: -80px;
+    justify-self: left;
+  }
+
+  &:hover {
+    background-color: $primary-gray;
+    //cursor: pointer;
+
+    & > &__date {
+      font-style: normal;
+      color: $primary-black;
+    }
+  }
+}

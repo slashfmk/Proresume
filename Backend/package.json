@@ -1,0 +1,43 @@
+{
+  "name": "proresume_backend",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "nodemon src/app.ts",
+    "test": "nodemon build/app.js",
+    "start": "node build/app.js",
+    "build": "rm -rf build/ && prettier --write src/ && tsc"
+  },
+  "keywords": [
+    "resumes",
+    "resume",
+    "pro"
+  ],
+  "author": "yannick fumukani",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.8",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/moment": "^2.13.0",
+    "@types/mysql": "^2.15.19",
+    "@types/node": "^14.14.10",
+    "@types/pg": "^7.14.5",
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "morgan": "~1.9.1",
+    "mysql": "github:mysqljs/mysql",
+    "nodemon": "^2.0.6",
+    "npm": "^8.1.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}

@@ -1,0 +1,45 @@
+@import '../abstract';
+
+// Menu item
+.nav__item__container {
+  width: 100%;
+  padding: 20px;
+ // margin: 0;
+  background-color: $primary-black;
+  margin-right: 5px;
+
+  transition: all .5s;
+
+  & > h3 {
+    font-size: 20px;
+    color: $primary-gray;
+    line-height: 29px;
+    font-weight: 600;
+  }
+
+  & > p {
+    color: white;
+    line-height: 16px;
+  }
+
+  &:visited {
+
+  }
+
+  &:hover, &:active{
+    background-color: $secondary-blue;
+
+    & > h3 {
+      color: $primary-blue;
+      line-height: 29px;
+    }
+
+    & > p {
+      color: white;
+    }
+  }
+}
+
+.active a {
+  background-color: #c21a1a;
+}

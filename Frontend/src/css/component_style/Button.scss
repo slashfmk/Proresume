@@ -1,0 +1,21 @@
+@import "../abstract";
+
+.btn {
+    padding: 1.5rem 1rem;
+    width: 100%;
+    border: none;
+    background-color: $primary-gray;
+    color: #fff;
+    font-weight: bold;
+    border-radius: .4rem;
+    font-family: $font-family;
+
+    &--neutral {
+        background-color: $primary-color;
+    }
+
+    &:hover {
+        background-color: $primary-black;
+        cursor: pointer;
+    }
+}
