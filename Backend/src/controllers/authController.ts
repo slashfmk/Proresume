@@ -9,7 +9,7 @@ const db = require("../database/db_config");
 const regexLib = require("../util/regexLibrary");
 
 
-const jwt_expiration = "2m";
+const jwt_expiration = "5m";
 const jwt_refresh_expiration = "1y";
 
 interface IUser {
@@ -88,6 +88,7 @@ export const signIn = async (
     }
 };
 
+// TODO: Generate new access token from refresh
 export const refreshTokenSignIn = (req: express.Request, res: express.Response, next: express.NextFunction) => {
 
     const refreshToken = req.body.token;
@@ -195,6 +196,7 @@ export const signUp = async (
             !password ||
             !repeat_password ||
             !passwordRegex.test(password) ||
+            password.toString().length < 8 ||
             !emailRegex.test(email)
         ) {
             return next({
@@ -203,7 +205,7 @@ export const signUp = async (
                     firstname: !firstname ? "firstname required!" : "",
                     lastname: !lastname ? "lastname required!" : "",
                     email: !email
-                        ? "email required!"
+                        ? "email required!!"
                         : "" || !emailRegex.test(email)
                             ? "Invalid email address!"
                             : "",
