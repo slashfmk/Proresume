@@ -1,6 +1,4 @@
 import express from "express";
-import bcrypt from "bcrypt";
-
 import { FieldInfo, MysqlError } from "mysql";
 
 const db = require("../database/db_config");
@@ -18,7 +16,6 @@ export const createResume = (
 
   //@ts-ignore
   const sqlInsert = `insert into resumes (title, description, user_id) values ('${title}', '${description}', '${req.user.user_id}')`;
-
   //@ts-ignore
   const sqlCheckExists = `select * from resumes where title = '${title}' and user_id ='${req.user.user_id}'`;
 
